@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Hello</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <a href="/bar">Go To Bar</a>
+    <div>
+        <img src="{{ url_for('static', filename='img/post-sample-image.jpg') }}" height="200">
+        <video controls>
+            <source src="{{ url_for('static', filename='video/mov_bbb.mp4') }}" type="video/mp4">
+        </video>
+
+    </div>
+</body>
+
+</html>
+
+<!-- inside style.css
+
+h1{
+    color: blueviolet;
+}
+
+body {
+    background-image: url(../img/home-bg.jpg);
+}
+
+-->
